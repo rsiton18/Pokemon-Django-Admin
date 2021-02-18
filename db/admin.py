@@ -5,8 +5,8 @@ from .models import *
 
 class PokemonSpeciesAdmin(admin.ModelAdmin):
 
-    list_display = ['name','evolutionLevel','nextEvolution']
-    filter_horizontal = ('pokemonType',)
+    list_display = ['name', 'Evolution_Level', 'Next_Evolution']
+    filter_horizontal = ('pokemon_Type',)
 
 admin.site.register(Pokemon)
 admin.site.register(PokemonSpecies,PokemonSpeciesAdmin)
